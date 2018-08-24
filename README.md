@@ -17,14 +17,12 @@ const mapCommonUtils = require('map-common-utils');
 const square = mapCommonUtils.square({lat: 53.5775, lng: 3.106111}, 1000)
 ```
 
+This package was generated with [yeoman generator-node](https://github.com/yeoman/generator-node).
+
 ## License
 
-AGPL-3.0 © [vjrj]()
+AGPL-3.0 © [Comunes Association](https://comunes.org)
 
 
 [npm-image]: https://badge.fury.io/js/map-common-utils.svg
 [npm-url]: https://npmjs.org/package/map-common-utils
-[travis-image]: https://travis-ci.org/comunes/map-common-utils.svg?branch=master
-[travis-url]: https://travis-ci.org/comunes/map-common-utils
-[daviddm-image]: https://david-dm.org/comunes/map-common-utils.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/comunes/map-common-utils
