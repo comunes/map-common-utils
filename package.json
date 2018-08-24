@@ -1,6 +1,6 @@
 {
   "name": "map-common-utils",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha",
   "description": "Map common utils",
   "homepage": "",
   "author": {
@@ -50,10 +50,8 @@
       "jest": true,
       "node": true
     },
-    "rules": {
-    },
-    "plugins": [
-    ]
+    "rules": {},
+    "plugins": []
   },
   "repository": "comunes/map-common-utils",
   "jest": {
