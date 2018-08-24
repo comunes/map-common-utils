@@ -1,4 +1,4 @@
-# map-common-utils [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# map-common-utils [![NPM version][npm-image]][npm-url]
 > Map common utils
 
 ## Installation
@@ -9,11 +9,14 @@ $ npm install --save map-common-utils
 
 ## Usage
 
+Given center as {lat, lng} and radius in meters create a polygon of a real-earth square:
+
 ```js
 const mapCommonUtils = require('map-common-utils');
 
-mapCommonUtils('Rainbow');
+const square = mapCommonUtils.square({lat: 53.5775, lng: 3.106111}, 1000)
 ```
+
 ## License
 
 AGPL-3.0 © [vjrj]()
