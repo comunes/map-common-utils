@@ -9,12 +9,20 @@ $ npm install --save map-common-utils
 
 ## Usage
 
-Given center as {lat, lng} and radius in meters create a polygon of a real-earth square:
+Given center {lat, lon} and x, y size in kilometers create a polygon of a real-earth rectangle.
 
 ```js
 const mapCommonUtils = require('map-common-utils');
 
-const square = mapCommonUtils.square({lat: 53.5775, lng: 3.106111}, 1000)
+const square = mapCommonUtils.rectangleAround({lat: 53.5775, lon: 3.106111}, 0.5, 1);
+```
+
+Given center {lat, lon} and size in kilometers create a polygon of a real-earth square.
+
+```js
+const mapCommonUtils = require('map-common-utils');
+
+const square = mapCommonUtils.squareAround({lat: 53.5775, lon: 3.106111}, 1);
 ```
 
 This package was generated with [yeoman generator-node](https://github.com/yeoman/generator-node).

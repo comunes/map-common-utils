@@ -20,7 +20,8 @@
     "eslint": "^4.19.1",
     "husky": "^0.14.3",
     "lint-staged": "^6.1.1",
-    "eslint-config-xo": "^0.20.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "jest": "^22.0.6"
   },
   "engines": {
@@ -38,20 +39,51 @@
       "git add"
     ],
     "*.json": [
-      "git add"
+       "git add"
     ]
   },
   "eslintConfig": {
+    "parserOptions": {
+      "ecmaFeatures": {
+      }
+    },
+    "plugins": [
+    ],
     "extends": [
-      "xo",
-      "prettier"
+      "airbnb"
     ],
     "env": {
-      "jest": true,
-      "node": true
+      "browser": true
     },
-    "rules": {},
-    "plugins": []
+    "globals": {
+      "expect": false
+    },
+    "rules": {
+      "import/no-unresolved": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/extensions": 0,
+      "max-len": 0,
+      "no-alert": 0,
+      "no-console": 0,
+      "no-restricted-globals": 0,
+      "no-return-assign": [
+        "error",
+        "except-parens"
+      ],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
+      ],
+      "class-methods-use-this": 0
+    }
   },
   "repository": "comunes/map-common-utils",
   "jest": {
@@ -59,6 +91,11 @@
   },
   "license": "AGPL-3.0",
   "dependencies": {
+    "@turf/bbox": "^6.0.1",
+    "@turf/bbox-polygon": "^6.0.1",
+    "@turf/destination": "^6.0.1",
+    "@turf/helpers": "^6.1.4",
+    "@turf/invariant": "^6.1.2",
     "spherical": "^0.2.0",
     "wgs84": "0.0.0"
   }
