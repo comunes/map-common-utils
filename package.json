@@ -1,6 +1,6 @@
 {
   "name": "map-common-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Map common utils",
   "homepage": "",
   "author": {
@@ -39,16 +39,14 @@
       "git add"
     ],
     "*.json": [
-       "git add"
+      "git add"
     ]
   },
   "eslintConfig": {
     "parserOptions": {
-      "ecmaFeatures": {
-      }
+      "ecmaFeatures": {}
     },
-    "plugins": [
-    ],
+    "plugins": [],
     "extends": [
       "airbnb"
     ],
