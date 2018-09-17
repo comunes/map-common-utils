@@ -25,7 +25,7 @@ const mapCommonUtils = require('map-common-utils');
 const square = mapCommonUtils.squareAround({lat: 53.5775, lon: 3.106111}, 1);
 ```
 
-Also, union of square/circle objects (see test).
+Also, union of square/circle objects (see doc folder).
 
 This package was generated with [yeoman generator-node](https://github.com/yeoman/generator-node).
 
